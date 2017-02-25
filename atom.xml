@@ -127,7 +127,7 @@
     <link href="http://yoursite.com/2017/02/25/article-title/"/>
     <id>http://yoursite.com/2017/02/25/article-title/</id>
     <published>2017-02-25T01:46:34.000Z</published>
-    <updated>2017-02-25T01:49:12.026Z</updated>
+    <updated>2017-02-25T07:52:45.640Z</updated>
     
     <content type="html"><![CDATA[<p>##zzqnxx, welcome to hexo!</p>
 ]]></content>
@@ -139,6 +139,10 @@
     
     </summary>
     
+      <category term="Spring" scheme="http://yoursite.com/categories/Spring/"/>
+    
+    
+      <category term="Spring" scheme="http://yoursite.com/tags/Spring/"/>
     
   </entry>
   
