@@ -5,7 +5,7 @@
     
     <entry>
       <title><![CDATA[《Spring实战》学习笔记（一）装配Bean]]></title>
-      <url>http://yoursite.com/2017/02/25/spring-action01/</url>
+      <url>https://gdufezlyl.github.io/2017/02/25/spring-action01/</url>
       <content type="html"><![CDATA[<h1 id="自动转配Bean"><a href="#自动转配Bean" class="headerlink" title="自动转配Bean"></a>自动转配Bean</h1><h2 id="创建可被发现的Bean"><a href="#创建可被发现的Bean" class="headerlink" title="创建可被发现的Bean"></a>创建可被发现的Bean</h2><a id="more"></a>
 <h3 id="代码结构："><a href="#代码结构：" class="headerlink" title="代码结构："></a>代码结构：</h3><p><img src="http://img.blog.csdn.net/20170203145759108?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvU2xvd19XYWtsZXI=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
 <h3 id="程序清单："><a href="#程序清单：" class="headerlink" title="程序清单："></a>程序清单：</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">package</span> soundsystem;</div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">CompactDisc</span> </span>&#123;</div><div class="line">    <span class="function"><span class="keyword">void</span> <span class="title">play</span><span class="params">()</span></span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
