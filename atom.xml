@@ -4,9 +4,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://gdufezlyl.github.io/"/>
+  <link href="http://yoursite.com/"/>
   <updated>2017-02-26T09:07:45.907Z</updated>
-  <id>https://gdufezlyl.github.io/</id>
+  <id>http://yoursite.com/</id>
   
   <author>
     <name>樹先森Leo</name>
@@ -17,8 +17,8 @@
   
   <entry>
     <title>《Spring实战》学习笔记（一）装配Bean</title>
-    <link href="https://gdufezlyl.github.io/2017/02/25/spring-action01/"/>
-    <id>https://gdufezlyl.github.io/2017/02/25/spring-action01/</id>
+    <link href="http://yoursite.com/2017/02/25/spring-action01/"/>
+    <id>http://yoursite.com/2017/02/25/spring-action01/</id>
     <published>2017-02-25T06:31:42.000Z</published>
     <updated>2017-02-26T09:07:45.907Z</updated>
     
@@ -112,14 +112,14 @@
     
     </summary>
     
-      <category term="Spring" scheme="https://gdufezlyl.github.io/categories/Spring/"/>
+      <category term="Spring" scheme="http://yoursite.com/categories/Spring/"/>
     
-      <category term="《Spring实战》学习笔记" scheme="https://gdufezlyl.github.io/categories/Spring/%E3%80%8ASpring%E5%AE%9E%E6%88%98%E3%80%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+      <category term="《Spring实战》学习笔记" scheme="http://yoursite.com/categories/Spring/%E3%80%8ASpring%E5%AE%9E%E6%88%98%E3%80%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="Spring" scheme="https://gdufezlyl.github.io/tags/Spring/"/>
+      <category term="Spring" scheme="http://yoursite.com/tags/Spring/"/>
     
-      <category term="《Spring实战》学习笔记" scheme="https://gdufezlyl.github.io/tags/%E3%80%8ASpring%E5%AE%9E%E6%88%98%E3%80%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+      <category term="《Spring实战》学习笔记" scheme="http://yoursite.com/tags/%E3%80%8ASpring%E5%AE%9E%E6%88%98%E3%80%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
