@@ -1,28 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-  <title>樹先森Leo的博客</title>
+<search>
   
-  <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
-  <updated>2017-02-26T09:07:45.907Z</updated>
-  <id>http://yoursite.com/</id>
-  
-  <author>
-    <name>樹先森Leo</name>
     
-  </author>
-  
-  <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>《Spring实战》学习笔记（一）装配Bean</title>
-    <link href="http://yoursite.com/2017/02/25/spring-action01/"/>
-    <id>http://yoursite.com/2017/02/25/spring-action01/</id>
-    <published>2017-02-25T06:31:42.000Z</published>
-    <updated>2017-02-26T09:07:45.907Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="自动转配Bean"><a href="#自动转配Bean" class="headerlink" title="自动转配Bean"></a>自动转配Bean</h1><h2 id="创建可被发现的Bean"><a href="#创建可被发现的Bean" class="headerlink" title="创建可被发现的Bean"></a>创建可被发现的Bean</h2><a id="more"></a>
+    <entry>
+      <title><![CDATA[《Spring实战》学习笔记（一）装配Bean]]></title>
+      <url>http://yoursite.com/2017/02/25/spring-action01/</url>
+      <content type="html"><![CDATA[<h1 id="自动转配Bean"><a href="#自动转配Bean" class="headerlink" title="自动转配Bean"></a>自动转配Bean</h1><h2 id="创建可被发现的Bean"><a href="#创建可被发现的Bean" class="headerlink" title="创建可被发现的Bean"></a>创建可被发现的Bean</h2><a id="more"></a>
 <h3 id="代码结构："><a href="#代码结构：" class="headerlink" title="代码结构："></a>代码结构：</h3><p><img src="http://img.blog.csdn.net/20170203145759108?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvU2xvd19XYWtsZXI=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
 <h3 id="程序清单："><a href="#程序清单：" class="headerlink" title="程序清单："></a>程序清单：</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">package</span> soundsystem;</div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">CompactDisc</span> </span>&#123;</div><div class="line">    <span class="function"><span class="keyword">void</span> <span class="title">play</span><span class="params">()</span></span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>PS：@Component表明组件类<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">package</span> soundsystem;</div><div class="line"></div><div class="line"><span class="keyword">import</span> org.springframework.stereotype.Component;</div><div class="line"></div><div class="line"><span class="meta">@Component</span></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SgtPeppers</span> <span class="keyword">implements</span> <span class="title">CompactDisc</span></span>&#123;</div><div class="line"></div><div class="line">    <span class="keyword">private</span> String title = <span class="string">"Sgt.Pepper's Lonely Hearts Club Bands"</span>;</div><div class="line">    <span class="keyword">private</span> String artist = <span class="string">"The Beatles"</span>;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">play</span><span class="params">()</span> </span>&#123;</div><div class="line">        System.out.println(<span class="string">"Playing "</span>+title+<span class="string">" by "</span>+artist);</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
@@ -105,22 +89,26 @@
 <h3 id="测试-6"><a href="#测试-6" class="headerlink" title="测试"></a>测试</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> org.junit.Rule;</div><div class="line"><span class="keyword">import</span> org.junit.Test;</div><div class="line"><span class="keyword">import</span> org.junit.contrib.java.lang.system.StandardOutputStreamLog;</div><div class="line"><span class="keyword">import</span> org.junit.runner.RunWith;</div><div class="line"><span class="keyword">import</span> org.springframework.beans.factory.annotation.Autowired;</div><div class="line"><span class="keyword">import</span> org.springframework.context.ApplicationContext;</div><div class="line"><span class="keyword">import</span> org.springframework.test.context.ContextConfiguration;</div><div class="line"><span class="keyword">import</span> org.springframework.test.context.junit4.SpringJUnit4ClassRunner;</div><div class="line"><span class="keyword">import</span> soundsystem.*;</div><div class="line"></div><div class="line"><span class="keyword">import</span> <span class="keyword">static</span> org.junit.Assert.assertEquals;</div><div class="line"></div><div class="line"><span class="meta">@RunWith</span>(SpringJUnit4ClassRunner.class)</div><div class="line"><span class="meta">@ContextConfiguration</span>(locations = &#123; <span class="string">"classpath*:/applicationContext.xml"</span>&#125;)</div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">CDPlayerTest</span> </span>&#123;</div><div class="line"></div><div class="line">    <span class="meta">@Autowired</span></div><div class="line">    <span class="keyword">private</span> ApplicationContext context;</div><div class="line"></div><div class="line">    <span class="meta">@Rule</span></div><div class="line">    <span class="keyword">public</span> <span class="keyword">final</span> StandardOutputStreamLog log = <span class="keyword">new</span> StandardOutputStreamLog();</div><div class="line"></div><div class="line">    <span class="meta">@Test</span></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">play</span><span class="params">()</span> </span>&#123;</div><div class="line">        CompactDisc compactDisc = (CompactDisc)context.getBean(BlankDisc.class);</div><div class="line">        MediaPlayer cdPlayer = (MediaPlayer)context.getBean(CDPlayer.class);</div><div class="line">        cdPlayer.play();</div><div class="line">        assertEquals(<span class="string">"helloworld1111122222333334444455555"</span>,log.getLog());</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p><img src="http://img.blog.csdn.net/20170204110656150?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvU2xvd19XYWtsZXI=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Spring </category>
+            
+            <category> 《Spring实战》学习笔记 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> Spring </tag>
+            
+            <tag> 《Spring实战》学习笔记 </tag>
+            
+        </tags>
+        
+    </entry>
     
-    <summary type="html">
-    
-      &lt;h1 id=&quot;自动转配Bean&quot;&gt;&lt;a href=&quot;#自动转配Bean&quot; class=&quot;headerlink&quot; title=&quot;自动转配Bean&quot;&gt;&lt;/a&gt;自动转配Bean&lt;/h1&gt;&lt;h2 id=&quot;创建可被发现的Bean&quot;&gt;&lt;a href=&quot;#创建可被发现的Bean&quot; class=&quot;headerlink&quot; title=&quot;创建可被发现的Bean&quot;&gt;&lt;/a&gt;创建可被发现的Bean&lt;/h2&gt;
-    
-    </summary>
-    
-      <category term="Spring" scheme="http://yoursite.com/categories/Spring/"/>
-    
-      <category term="《Spring实战》学习笔记" scheme="http://yoursite.com/categories/Spring/%E3%80%8ASpring%E5%AE%9E%E6%88%98%E3%80%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-    
-      <category term="Spring" scheme="http://yoursite.com/tags/Spring/"/>
-    
-      <category term="《Spring实战》学习笔记" scheme="http://yoursite.com/tags/%E3%80%8ASpring%E5%AE%9E%E6%88%98%E3%80%8B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-  </entry>
   
-</feed>
+  
+</search>
