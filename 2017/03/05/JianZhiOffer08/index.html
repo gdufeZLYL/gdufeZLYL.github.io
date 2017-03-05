@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="剑指Offer,数组," />
 
 
 
@@ -87,16 +87,16 @@
 
 
 
-<meta name="description" content="这个人很懒，什么都没有留下">
+<meta name="description" content="题目描述时间限制：1秒 空间限制：32768K本题知识点： 数组输入一个整数数组，实现一个函数来调整该数组中数字的顺序，使得所有的奇数位于数组的前半部分，所有的偶数位于位于数组的后半部分，并保证奇数和奇数，偶数和偶数之间的相对位置不变。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="JianZhiOffer08">
+<meta property="og:title" content="【剑指Offer】调整数组顺序使奇数位于偶数前面">
 <meta property="og:url" content="http://yoursite.com/2017/03/05/JianZhiOffer08/index.html">
 <meta property="og:site_name" content="樹先森Leo的博客">
-<meta property="og:description" content="这个人很懒，什么都没有留下">
-<meta property="og:updated_time" content="2017-03-05T05:05:29.571Z">
+<meta property="og:description" content="题目描述时间限制：1秒 空间限制：32768K本题知识点： 数组输入一个整数数组，实现一个函数来调整该数组中数字的顺序，使得所有的奇数位于数组的前半部分，所有的偶数位于位于数组的后半部分，并保证奇数和奇数，偶数和偶数之间的相对位置不变。">
+<meta property="og:updated_time" content="2017-03-05T05:09:05.619Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="JianZhiOffer08">
-<meta name="twitter:description" content="这个人很懒，什么都没有留下">
+<meta name="twitter:title" content="【剑指Offer】调整数组顺序使奇数位于偶数前面">
+<meta name="twitter:description" content="题目描述时间限制：1秒 空间限制：32768K本题知识点： 数组输入一个整数数组，实现一个函数来调整该数组中数字的顺序，使得所有的奇数位于数组的前半部分，所有的偶数位于位于数组的后半部分，并保证奇数和奇数，偶数和偶数之间的相对位置不变。">
 
 
 
@@ -130,7 +130,7 @@
 
 
 
-  <title> JianZhiOffer08 | 樹先森Leo的博客 </title>
+  <title> 【剑指Offer】调整数组顺序使奇数位于偶数前面 | 樹先森Leo的博客 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -322,7 +322,7 @@
             
             
               
-                JianZhiOffer08
+                【剑指Offer】调整数组顺序使奇数位于偶数前面
               
             
           </h1>
@@ -348,6 +348,28 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/剑指Offer/" itemprop="url" rel="index">
+                    <span itemprop="name">剑指Offer</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -365,7 +387,7 @@
 
           
           
-             <span id="/2017/03/05/JianZhiOffer08/" class="leancloud_visitors" data-flag-title="JianZhiOffer08">
+             <span id="/2017/03/05/JianZhiOffer08/" class="leancloud_visitors" data-flag-title="【剑指Offer】调整数组顺序使奇数位于偶数前面">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -394,7 +416,8 @@
       
 
       
-        
+        <h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><h5 id="时间限制：1秒-空间限制：32768K"><a href="#时间限制：1秒-空间限制：32768K" class="headerlink" title="时间限制：1秒 空间限制：32768K"></a>时间限制：1秒 空间限制：32768K</h5><h5 id="本题知识点：-数组"><a href="#本题知识点：-数组" class="headerlink" title="本题知识点： 数组"></a>本题知识点： 数组</h5><p>输入一个整数数组，实现一个函数来调整该数组中数字的顺序，使得所有的奇数位于数组的前半部分，所有的偶数位于位于数组的后半部分，并保证奇数和奇数，偶数和偶数之间的相对位置不变。</p>
+<h2 id=""><a href="#" class="headerlink" title=""></a><a id="more"></a></h2><h3 id="代码（Java）"><a href="#代码（Java）" class="headerlink" title="代码（Java）"></a>代码（Java）</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> java.util.ArrayList;</div><div class="line"><span class="keyword">import</span> java.util.Arrays;</div><div class="line"><span class="keyword">import</span> java.util.Stack;</div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Main</span> </span>&#123;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">reOrderArray</span><span class="params">(<span class="keyword">int</span> [] array)</span> </span>&#123;</div><div class="line">        <span class="keyword">int</span>[] temp = <span class="keyword">new</span> <span class="keyword">int</span>[array.length];</div><div class="line">        <span class="keyword">int</span> index = <span class="number">0</span>;</div><div class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; array.length; i++) &#123;</div><div class="line">            <span class="keyword">if</span>((array[i]&amp;<span class="number">1</span>) == <span class="number">1</span>) &#123;</div><div class="line">                temp[index++] = array[i];</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; array.length; i++) &#123;</div><div class="line">            <span class="keyword">if</span>((array[i]&amp;<span class="number">1</span>) == <span class="number">0</span>) &#123;</div><div class="line">                temp[index++] = array[i];</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        <span class="comment">//纯编程</span></div><div class="line">        </div><div class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; array.length; i++) &#123;</div><div class="line">            array[i] = temp[i];</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        <span class="comment">//利用库函数</span></div><div class="line">        <span class="comment">//array = Arrays.copyOf(temp, temp.length);</span></div><div class="line">    &#125;</div><div class="line">    <span class="comment">/*</span></div><div class="line">        测试代码</div><div class="line">     */</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String []args)</span></span>&#123;</div><div class="line">        <span class="keyword">int</span>[] array = &#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>&#125;;</div><div class="line">        reOrderArray(array);</div><div class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> a : array)&#123;</div><div class="line">            System.out.println(a);</div><div class="line">        &#125;</div><div class="line"></div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
       
     </div>
 
@@ -414,6 +437,14 @@
 
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/剑指Offer/" rel="tag"># 剑指Offer</a>
+          
+            <a href="/tags/数组/" rel="tag"># 数组</a>
+          
+        </div>
       
 
       
@@ -448,7 +479,7 @@
     <div class="post-spread">
       
         <div class="ds-share flat" data-thread-key="2017/03/05/JianZhiOffer08/"
-     data-title="JianZhiOffer08"
+     data-title="【剑指Offer】调整数组顺序使奇数位于偶数前面"
      data-content=""
      data-url="http://yoursite.com/2017/03/05/JianZhiOffer08/">
   <div class="ds-share-inline">
@@ -478,7 +509,7 @@
   <div class="comments" id="comments">
     
       <div class="ds-thread" data-thread-key="2017/03/05/JianZhiOffer08/"
-           data-title="JianZhiOffer08" data-url="http://yoursite.com/2017/03/05/JianZhiOffer08/">
+           data-title="【剑指Offer】调整数组顺序使奇数位于偶数前面" data-url="http://yoursite.com/2017/03/05/JianZhiOffer08/">
       </div>
     
   </div>
@@ -502,8 +533,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/WeChat.jpg"
@@ -595,6 +635,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#题目描述"><span class="nav-number">1.</span> <span class="nav-text">题目描述</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#时间限制：1秒-空间限制：32768K"><span class="nav-number">1.0.1.</span> <span class="nav-text">时间限制：1秒 空间限制：32768K</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#本题知识点：-数组"><span class="nav-number">1.0.2.</span> <span class="nav-text">本题知识点： 数组</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#"><span class="nav-number"></span> <span class="nav-text"></span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#代码（Java）"><span class="nav-number">1.</span> <span class="nav-text">代码（Java）</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
